@@ -38,13 +38,9 @@
     .project-links { font-size: 0.88em; color: #57606a; }
     .project-links a { color: #0969da; text-decoration: none; }
     .project-links a:hover { text-decoration: underline; }
-    .skills-grid { display: grid; gap: 4px; }
-    .skill-row { display: flex; gap: 8px; }
-    .skill-label { font-weight: 600; min-width: 200px; flex-shrink: 0; }
     .in-progress { font-size: 0.82em; color: #9a6700; background: #fff8c5; border: 1px solid #d4a72c; border-radius: 4px; padding: 1px 6px; vertical-align: middle; margin-left: 6px; }
     @media (max-width: 600px) {
-      .skill-row { flex-direction: column; gap: 0; }
-      .skill-label { min-width: unset; }
+      body { padding: 0 16px 32px; margin: 24px auto; }
     }
   </style>
 </head>
@@ -53,7 +49,7 @@
   <h1>Maria Magdalena Balos</h1>
   <div class="subtitle">Data Scientist</div>
   <div class="contact">
-    Cambridge, UK &middot;
+    Cambridge, UK &middot; +44 7899 866 210 &middot;
     <a href="mailto:mariabalos16@gmail.com">mariabalos16@gmail.com</a> &middot;
     <a href="https://linkedin.com/in/mariabalos" target="_blank">linkedin.com/in/mariabalos</a> &middot;
     <a href="https://github.com/mbalos16" target="_blank">github.com/mbalos16</a>
@@ -61,11 +57,11 @@
 
   <h2>Summary</h2>
   <p>
-    Data scientist with a background in UX research and a strong focus on applied machine learning, NLP, and generative AI.
+    Data scientist with a strong focus on applied machine learning, NLP, and generative AI, complemented by a background in UX research.
     Experienced in training and deploying speech models in production, building RAG systems, and implementing deep learning
     architectures from scratch. Combines deep ML expertise with a UX research background, enabling technical depth and
-    user-centred thinking, with a track record of delivering results independently and communicating findings clearly
-    across technical and non-technical audiences.
+    user-centred thinking, with a pragmatic, committed approach to problem solving, delivering results independently
+    and communicating findings clearly across technical and non-technical audiences.
   </p>
 
   <h2>Experience</h2>
@@ -73,11 +69,13 @@
   <h3>Data Scientist — <a href="https://vocality.ai" target="_blank">Vocality.ai</a></h3>
   <div class="role-meta">Jan 2025 – Present &middot; Remote</div>
   <ul>
-    <li>Trained and fine-tuned text-to-speech models for commercial deployment across multiple languages (English, Spanish, Basque, Slovenian), with models currently serving end users in production.</li>
-    <li>Improved model quality by refining data processing pipelines — including data filtering and transcription quality — to reduce artefacts such as metallicity and improve pronunciation accuracy.</li>
-    <li>Built and maintained speech generation pipelines on GCP, integrating models including WhisperX (ASR) and BigVGAN (vocoder).</li>
+    <li>Trained and deployed text-to-speech (TTS) models across multiple languages (en-GB, es-ES, eu-ES, sl-SI), serving end users and enterprise clients including Mercedes-Benz, Heineken, and ONCE, contributing to €10k+ monthly recurring revenue.</li>
+    <li>Reduced critical mispronunciation rate in es-ES from ~11% to &lt;0.5% through improved data quality, fine-tuning, and model architecture improvements.</li>
+    <li>Automated manual workflows, reducing operational overhead by ~50%.</li>
+    <li>Maintained and extended MLOps pipelines on GCP, integrating TTS models into production deployment workflows.</li>
     <li>Built an audio post-processing pipeline assembling multi-segment TTS outputs into complete audio tracks based on timestamps, removing silences, and formatting audio for ads and e-learning applications.</li>
     <li>Generated and validated subtitle outputs from TTS pipelines.</li>
+    <li>Built business analytics dashboards in Streamlit to visualise app usage statistics and user spending.</li>
   </ul>
 
   <h3>Research Assistant — Museum of Archaeology and Anthropology</h3>
@@ -90,8 +88,8 @@
   <h3>UX Researcher — Singer Instruments</h3>
   <div class="role-meta">Sep 2022 – Mar 2023 &middot; Remote</div>
   <ul>
-    <li>Automated interview transcription and speaker diarization using Whisper and Pyannote, reducing transcription time by 80% and enabling distinction between user and interviewer speech for downstream analysis and further reference.</li>
-    <li>Designed and led usability studies and user interviews in laboratory environments with scientists.</li>
+    <li>Automated interview transcription and speaker diarization using Whisper and Pyannote, reducing transcription time by ~80% and enabling automatic labelling of user and interviewer speech turns for downstream analysis.</li>
+    <li>Designed and led usability studies, user interviews, and A/B testing in laboratory environments with scientists.</li>
     <li>Analysed qualitative and quantitative research data to inform product decisions across a multi-disciplinary R&amp;D team.</li>
     <li>Awarded Intern of the Year 2022.</li>
   </ul>
@@ -123,8 +121,8 @@
     <span class="project-links"><a href="https://github.com/mbalos16/datamecum_tfm" target="_blank">GitHub</a></span>
   </p>
   <ul>
-    <li>Built a full-stack RAG application using LangChain, ChromaDB, GPT-4o-mini, and Claude-3-Haiku.</li>
-    <li>Ingested a knowledge base built from Whisper transcriptions of all master video lessons (364h of content — 91 videos).</li>
+    <li>Ingested ~364h of video content (91 lessons) via Whisper transcriptions into a vector knowledge base.</li>
+    <li>Built a full-stack RAG application using LangChain, ChromaDB, and Large Language Models (LLMs) including GPT-4o-mini and Claude-3-Haiku.</li>
     <li>Benchmarked RAG-based vs. non-RAG-based approaches to evaluate and quantify retrieval benefit.</li>
     <li>Implemented gamification in the Flask interface, repurposing the benchmark as a student leaderboard to compare human performance against the RAG/LLM system.</li>
   </ul>
@@ -134,8 +132,7 @@
     <span class="project-links"><a href="https://github.com/mbalos16/ryanair_timecapsule" target="_blank">GitHub</a></span>
   </p>
   <ul>
-    <li>Reverse-engineered the Ryanair API to enable systematic daily collection of flight price data across two endpoints.</li>
-    <li>Released as an open-source Python package with tests and CLI scripts to facilitate data collection for researchers interested in price forecasting.</li>
+    <li>Reverse-engineered the Ryanair API to enable systematic daily collection of flight price data across two endpoints. Released as an open-source Python package with tests and CLI scripts to facilitate data collection for researchers interested in price prediction and forecasting.</li>
   </ul>
 
   <p>
@@ -143,7 +140,7 @@
     <span class="project-links"><a href="https://medium.com/@mariabalos16/machine-learning-applied-to-the-design-industry-k-means-for-image-palette-generation-dbd908b2312b" target="_blank">Article</a></span>
   </p>
   <ul>
-    <li>Applied K-Means clustering to extract dominant colour palettes from images, deployed as a Flask web application.</li>
+    <li>Applied K-Means clustering to extract and visualise dominant colour palettes from images, deployed as a Flask web application for interactive data visualization.</li>
   </ul>
 
   <h2>Education</h2>
@@ -151,14 +148,15 @@
   <h3>Master's in Deep Learning &amp; Generative AI &middot; Datamecum, Madrid</h3>
   <div class="role-meta">Oct 2024 – Jul 2025</div>
   <ul>
-    <li>Dissertation: RAG-Driven Educational Assistant — contextual Q&amp;A and knowledge testing system for DS students.</li>
-    <li>Coursework: transformer architectures, generative models, NLP, computer vision.</li>
+    <li>Dissertation: RAG-Driven Educational Assistant — Q&amp;A and knowledge testing system for DS students.</li>
+    <li>Coursework: computer science, neural networks, transformer architectures, generative models, NLP, computer vision.</li>
   </ul>
 
   <h3>Intensive Program in Data Science &middot; Datamecum, Madrid</h3>
   <div class="role-meta">Oct 2023 – May 2024</div>
   <ul>
-    <li>1st place: Winner of the 3rd Datamecum Datathon — binary classification competition (AUC 0.9851) using an ensemble of Random Forest and XGBoost.</li>
+    <li>Won 1st place in the 3rd Datamecum Datathon (Kaggle-style competition) — conducted exploratory data analysis and built a binary classification model (AUC 0.9851) using an ensemble of Random Forest and XGBoost.</li>
+    <li>Coursework: statistical analysis, modelling techniques, machine learning algorithms, EDA, supervised and unsupervised learning, outlier detection.</li>
   </ul>
 
   <h3>Master's in Interaction Design &amp; UX &middot; Universitat Oberta de Catalunya</h3>
@@ -168,28 +166,23 @@
   <div class="role-meta">2018 – 2021</div>
 
   <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-row"><span class="skill-label">ML &amp; AI</span><span>Deep Learning &middot; NLP &middot; Speech Models (TTS, ASR) &middot; RAG &middot; Computer Vision &middot; CNNs &middot; Transformers &middot; Generative AI</span></div>
-    <div class="skill-row"><span class="skill-label">Frameworks &amp; Tools</span><span>PyTorch &middot; Hugging Face &middot; LangChain &middot; ChromaDB &middot; Scikit-learn &middot; Pandas &middot; NumPy &middot; Streamlit &middot; Flask</span></div>
-    <div class="skill-row"><span class="skill-label">Cloud &amp; Infrastructure</span><span>Google Cloud (GCP) &middot; Git &middot; Docker</span></div>
-    <div class="skill-row"><span class="skill-label">Programming</span><span>Python &middot; SQL &middot; Bash</span></div>
-    <div class="skill-row"><span class="skill-label">Other</span><span>Speaker Diarization &middot; Whisper &middot; UX Research &middot; Agile &middot; Unit Testing</span></div>
-  </div>
+  <p><strong>Machine Learning &amp; Artificial Intelligence (ML &amp; AI):</strong> Deep Learning, Natural Language Processing (NLP), Speech Models (TTS, ASR), RAG, LLMs, Computer Vision, CNNs, Transformers, Generative AI, Decision Trees, Gradient Boosting (XGBoost), Linear Regression</p>
+  <p><strong>Frameworks &amp; Tools:</strong> PyTorch, Hugging Face, LangChain, ChromaDB, Scikit-learn, Pandas, NumPy, Streamlit, Flask</p>
+  <p><strong>Cloud &amp; Infra:</strong> Google Cloud (GCP), MLOps, Version Control Systems (Git), Docker</p>
+  <p><strong>Programming Skills:</strong> Python, SQL, Bash</p>
+  <p><strong>Other:</strong> Data Analytics, Data Visualisation, Speaker Diarization, Whisper, UX Research, Agile, Teamwork, Unit Testing</p>
 
   <h2>Certifications &amp; Continuous Learning</h2>
   <ul>
-    <li>Advanced Learning Algorithms — Andrew Ng, Coursera</li>
-    <li>Practical Deep Learning — fast.ai</li>
-    <li>NLP with Transformers — Hugging Face</li>
-    <li>Audio Transformers — Hugging Face</li>
-    <li>Supervised Machine Learning — Coursera</li>
-    <li>200+ LeetCode problems solved</li>
-    <li>Advent of Code 2024 — completed</li>
+    <li>Coursera (Andrew Ng): Advanced Learning Algorithms, Supervised Machine Learning</li>
+    <li>fast.ai: Practical Deep Learning</li>
+    <li>Hugging Face: NLP with Transformers, Audio Transformers</li>
+    <li>300+ LeetCode problems solved &middot; Advent of Code 2024</li>
     <li>Active member, Cambridge Programmers Study Group (weekly meetup)</li>
   </ul>
 
   <h2>Languages</h2>
-  <p>Spanish (native) &middot; Romanian (native) &middot; English (full professional) &middot; French (basic)</p>
+  <p>English (full professional) &middot; Spanish (native) &middot; Romanian (native) &middot; French (basic)</p>
 
 </body>
 </html>
